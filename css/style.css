@@ -153,8 +153,215 @@ header .container .icon {
     font-weight: 900;
 }
 
+.page-header {
+    font-family: 'Lato';
+    background: #F1E4E6;
+    margin-bottom: 55px;
+    padding: 60px 0;
+}
+
+.page-header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-header h1 {
+    text-transform: uppercase;
+    color: #F15E5A;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.breadcrumbs {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+    display: flex;
+}
+
+.breadcrumbs li {
+    list-style: none;
+}
+
+.breadcrumbs li a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    padding: 5px;
+}
+
+.breadcrumbs li:after {
+    content: '/';
+}
+
+.breadcrumbs li:last-child:after {
+    content: none;
+}
+
+.breadcrumbs .current {
+    color: #F15E5A;
+    padding: 5px;
+}
+
+section.catalog {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 96px;
+}
+
+section.sorting {
+    max-width: 62%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lato';
+}
+
+.sort-by span {
+    margin: 10px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+.sort-by span:after {
+    content: '\f107';
+    font-family: FontAwesome;
+    font-size: 22px;
+    vertical-align: bottom;
+}
+
+.filter {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    position: relative;
+}
+
+.fa-filter:before {
+    font-size: 20px;
+}
+
+.filter>a,
+.sort-by {
+    text-transform: uppercase;
+}
+
+.filter>a {
+    position: absolute;
+    z-index: 10;
+    left: 20px;
+}
+
+.filter:hover>a {
+    color: #F15E5A;
+}
+
+.filter:hover .filter-nav {
+    display: flex;
+}
+
+.filter span,
+.sort-by span:after {
+    margin-left: 10px;
+}
+
+.sort-by select {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.sort-by label {
+    display: block;
+}
+
+.filter-nav {
+    padding: 35px 13px 16px;
+    box-shadow: 6px 4px 35px rgb(0 0 0 / 21%);
+    font-weight: 400;
+    min-width: 360px;
+    position: absolute;
+    top: -13px;
+    background: white;
+    z-index: 1;
+    display: none;
+}
+
+.filter-nav>ul>li {
+    margin: 10px 0;
+}
+
+.filter-nav>ul>li>ul {
+    margin: 24px 0;
+}
+
+.filter-nav li {
+    list-style: none;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.filter-nav li a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.filter-nav>ul ul {
+    text-transform: none;
+}
+
+.filter-nav>ul>li span {
+    border-left: 5px solid #F15E5A;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 10px;
+    display: block;
+    margin-left: 0;
+    text-transform: uppercase;
+}
+
 .red {
     color: #F15E5A;
+}
+
+.pagination {
+    color: #C4C4C4;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination ul {
+    border: 1px solid #EBEBEB;
+    display: flex;
+}
+
+.pagination li {
+    list-style: none;
+}
+
+.pagination li>a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+.pagination li.current,
+.pagination li.icon-left,
+.pagination li.icon-right {
+    color: #F15E5A;
+    padding: 10px;
+}
+
+.pagination li.icon-left,
+.pagination li.icon-right {
+    color: black;
+    font-size: 20px;
 }
 
 .banners .container {
@@ -630,6 +837,18 @@ footer .social li a {
     .top-nav {
         margin-right: -16px;
     }
+
+    .page-header {
+        margin-bottom: 24px;
+    }
+
+    .cards {
+        margin-top: 40px;
+    }
+
+    section.catalog {
+        margin-bottom: 63px;
+    }
 }
 
 /* Galaxy S20 Ultra */
@@ -693,6 +912,10 @@ footer .social li a {
         width: 100%;
     }
 
+    .card-image {
+        height: auto;
+    }
+
     .services {
         padding: 0 0 81px 0;
     }
@@ -733,6 +956,40 @@ footer .social li a {
 
     .top-nav {
         right: 0;
+    }
+
+    .page-header {
+        padding: 30px 0 40px;
+    }
+
+    .page-header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .breadcrumbs {
+        margin-top: 30px;
+        margin-top: 20px;
+    }
+
+    section.sorting {
+        max-width: 100%;
+    }
+
+    .filter>a>.label {
+        display: none;
+    }
+
+    .filter>a>.icon {
+        margin-left: 0;
+    }
+
+    .filter>a {
+        left: 0;
+    }
+
+    .sort-by span {
+        margin: 5px;
     }
 }
 
