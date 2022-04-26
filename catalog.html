@@ -57,56 +57,58 @@
             </ul>
         </div>
     </header>
-    <section class="banner-top">
-        <a href="#">
-            <div class="container">
-                <div class="banner-top-image">
-                    <img src="images/banner-top-image.png" alt="Banner Top Image">
-                </div>
-                <div class="banner-top-text">
-                    <p class="banner-top-text-title">The brand</p>
-                    <p>of luxerious <span class="red">fashion</span></p>
-                </div>
-            </div>
-        </a>
-    </section>
-    <section class="banners">
+    <section class="page-header">
         <div class="container">
-            <div class="banner">
-                <a href="#"><img src="images/banner-1.png" alt="30% off for women"></a>
-                <div class="banner-text">
-                    <p>30% off</p>
-                    <p class="banner-text-title">for women</p>
-                </div>
-            </div>
-            <div class="banner">
-                <a href="#"><img src="images/banner-2.png" alt="Hot deal for men"></a>
-                <div class="banner-text">
-                    <p>Hot deal</p>
-                    <p class="banner-text-title">for men</p>
-                </div>
-            </div>
-            <div class="banner">
-                <a href="#"><img src="images/banner-3.png" alt="New arivals for kind"></a>
-                <div class="banner-text">
-                    <p>New arivals</p>
-                    <p class="banner-text-title">for kind</p>
-                </div>
-            </div>
-            <div class="banner banner-wide">
-                <a href="#"><img src="images/banner-4.png" alt="Accesories"></a>
-                <div class="banner-text">
-                    <p>Luxirious & trends</p>
-                    <p class="banner-text-title">accesories</p>
-                </div>
-            </div>
+            <h1>New Arrivals</h1>
+            <ul class="breadcrumbs">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Man</a></li>
+                <li class="current">New Arrivals</li>
+            </ul>
         </div>
     </section>
-    <section class="featured container">
-        <header>
-            <h2>Featured Items</h2>
-            <p>Shop for items based on what we featured in this week</p>
-        </header>
+
+    <section class="catalog container">
+        <section class="sorting">
+            <div class="filter">
+                <a><span class="label">Filter</span><span class="icon fa-light fa-filter"></span></a>
+                <nav class="filter-nav">
+                    <ul>
+                        <li><span>Category</span>
+                            <ul>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Bags</a></li>
+                                <li><a href="#">Denim</a></li>
+                                <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                <li><a href="#">Jackets & Coats</a></li>
+                                <li><a href="#">Polos</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shoes</a></li>
+                                <li><a href="#">Sweaters & Knits</a></li>
+                                <li><a href="#">T-Shirts</a></li>
+                                <li><a href="#">Tanks</a></li>
+                            </ul>
+                        </li>
+                        <li><span>Brand</span></li>
+                        <li><span>Designer</span></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sort-by">
+                <form>
+                    <span class="sort-trending">Trending Now</span>
+                    <span class="sort-size">Size</span>
+                    <!--
+                    <select>
+                        <label><input type="checkbox">XS</label>
+                        <label><input type="checkbox">S</label>
+                        <label><input type="checkbox">M</label>
+                        <label><input type="checkbox">L</label>
+                    </select>-->
+                    <span class="sort-price">Price</span>
+                </form>
+            </div>
+        </section>
         <div class="cards">
             <a class="card" href="#">
                 <div class="card-image">
@@ -174,8 +176,54 @@
                     <p class="price">$52.00</p>
                 </div>
             </a>
+            <a class="card" href="#">
+                <div class="card-image">
+                    <img src="images/card-1.png" alt="Ellery X X M'O Capsule">
+                    <span class="regular-button add-to-cart-button"><span class="icon fa-light fa-shopping-cart"></span>Add to Cart</span>
+                </div>
+                <div class="card-text">
+                    <h3>Ellery X X M'O Capsule</h3>
+                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="price">$52.00</p>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card-image">
+                    <img src="images/card-2.png" alt="Ellery X X M'O Capsule">
+                    <span class="regular-button add-to-cart-button"><span class="icon fa-light fa-shopping-cart"></span>Add to Cart</span>
+                </div>
+                <div class="card-text">
+                    <h3>Ellery X X M'O Capsule</h3>
+                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="price">$52.00</p>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card-image">
+                    <img src="images/card-3.png" alt="Ellery X X M'O Capsule">
+                    <span class="regular-button add-to-cart-button"><span class="icon fa-light fa-shopping-cart"></span>Add to Cart</span>
+                </div>
+                <div class="card-text">
+                    <h3>Ellery X X M'O Capsule</h3>
+                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="price">$52.00</p>
+                </div>
+            </a>
         </div>
-        <button class="regular-button">Browse All Products</button>
+        <div class="pagination">
+            <ul>
+                <li class="icon-left fa-light fa-angle-left"></li>
+                <li class="current">1</li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">20</a></li>
+                <li class="icon-left fa-light fa-angle-right"></li>
+            </ul>
+        </div>
     </section>
     <section class="services">
         <div class="container">
