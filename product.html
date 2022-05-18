@@ -14,14 +14,14 @@
     <title>Document</title>
 </head>
 <body class="page-product">
-    <header class="header-top">
+    <header class="header-bar">
         <div class="container">
-            <div class="header-bar-left">
+            <div class="header-bar__left">
                 <a class="logo" href="index.html"><img src="images/logo.svg" alt="logo"></a>
                 <a class="icon search fa-light fa-search" href="#"></a>
             </div>
-            <ul class="header-bar-right">
-                <li class="header-bar-menu"><a href="#"><span class="icon fa-light fa-bars"></span></a>
+            <ul class="header-bar__right">
+                <li class="header-bar__menu"><a href="#"><span class="icon fa-light fa-bars"></span></a>
                     <nav class="top-nav">
                         <h2>Menu</h2>
                         <ul>
@@ -55,15 +55,15 @@
                         </ul>
                     </nav>
                 </li>
-                <li class="header-bar-account"><a href="#"><span class="icon fa-light fa-user"></span></a></li>
-                <li class="header-bar-minicart"><a href="#"><span class="icon fa-light fa-shopping-cart"></span><span class="cart-counter">5</span></a></li>
+                <li class="header-bar__account"><a href="#"><span class="icon fa-light fa-user"></span></a></li>
+                <li class="header-bar__minicart"><a href="#"><span class="icon fa-light fa-shopping-cart"></span><span class="counter">5</span></a></li>
             </ul>
         </div>
     </header>
     <section class="page-header">
         <div class="container">
             <h1>New Arrivals</h1>
-            <ul class="breadcrumbs">
+            <ul class="page-header__breadcrumbs">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Man</a></li>
                 <li class="current">New Arrivals</li>
@@ -71,8 +71,8 @@
         </div>
     </section>
 
-    <section class="product">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <section class="page-product__product">
+        <div id="carouselExampleFade" class="page-product__carousel carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="images/product-image1.png" class="d-block w-100" alt="Moschino cheap and chic">
@@ -92,16 +92,16 @@
             </button>
         </div>
 
-        <div class="product-description container">
-            <p class="category">Women collection</p>
-            <p class="title">Moschino cheap and chic</p>
-            <p class="description">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
-            <p class="price">$561</p>
-            <div class="buttons">
-                <div class="sort-by">
+        <div class="page-product__text container">
+            <p class="page-product__category">Women collection</p>
+            <p class="page-product__title">Moschino cheap and chic</p>
+            <p class="page-product__description">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
+            <p class="page-product__price">$561</p>
+            <div class="page-product__buttons sorting">
+                <div class="sorting__sort-by">
                     <details>
                         <summary class="sort-size">Choose Color</summary>
-                        <div class="sort-options">
+                        <div class="sorting__options">
                             <label><input type="checkbox">Black</label>
                             <label><input type="checkbox">White</label>
                             <label><input type="checkbox">Grey</label>
@@ -110,7 +110,7 @@
                     </details>
                     <details>
                         <summary class="sort-size">Choose Size</summary>
-                        <div class="sort-options">
+                        <div class="sorting__options">
                             <label><input type="checkbox">XS</label>
                             <label><input type="checkbox">S</label>
                             <label><input type="checkbox">M</label>
@@ -119,7 +119,7 @@
                     </details>
                     <details>
                         <summary class="sort-size">Quantity</summary>
-                        <div class="sort-options">
+                        <div class="sorting__options">
                             <label><input type="checkbox">1</label>
                             <label><input type="checkbox">2</label>
                             <label><input type="checkbox">3</label>
@@ -127,72 +127,72 @@
                         </div>
                     </details>
                 </div>
-                <a class="button regular-button add-to-cart-button">Add to cart</a>
+                <a class="button button--regular add-to-cart-button">Add to cart</a>
             </div>
         </div>
     </section>
 
-    <section class="cards container">
-        <article class="card">
+    <section class="products container">
+        <article class="product">
             <a href="#">
-                <div class="card-image">
+                <div class="product__image">
                     <img src="images/card-1.png" alt="Ellery X X M'O Capsule">
-                    <div class="button regular-button add-to-cart-button">Add to Cart</div>
+                    <div class="button button--regular add-to-cart-button">Add to Cart</div>
                 </div>
-                <div class="card-text">
+                <div class="product__text">
                     <h3>Ellery X X M'O Capsule</h3>
                     <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="price">$52.00</p>
+                    <p class="product__price">$52.00</p>
                 </div>
             </a>
         </article>
-        <article class="card">
+        <article class="product">
             <a href="#">
-                <div class="card-image">
+                <div class="product__image">
                     <img src="images/card-2.png" alt="Ellery X X M'O Capsule">
-                    <div class="button regular-button add-to-cart-button">Add to Cart</div>
+                    <div class="button button--regular add-to-cart-button">Add to Cart</div>
                 </div>
-                <div class="card-text">
+                <div class="product__text">
                     <h3>Ellery X X M'O Capsule</h3>
                     <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="price">$52.00</p>
+                    <p class="product__price">$52.00</p>
                 </div>
             </a>
         </article>
-        <article class="card">
+        <article class="product">
             <a href="#">
-                <div class="card-image">
+                <div class="product__image">
                     <img src="images/card-3.png" alt="Ellery X X M'O Capsule">
-                    <div class="button regular-button add-to-cart-button">Add to Cart</div>
+                    <div class="button button--regular add-to-cart-button">Add to Cart</div>
                 </div>
-                <div class="card-text">
+                <div class="product__text">
                     <h3>Ellery X X M'O Capsule</h3>
                     <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="price">$52.00</p>
+                    <p class="product__price">$52.00</p>
                 </div>
             </a>
         </article>
     </section>
 
-    <section class="reviews">
+    <section class="bottom">
         <div class="container">
-            <figure class="review">
+            <figure class="bottom__review">
                 <img src="images/review-photo.png" alt="Review author">
                 <figcaption>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar purus condimentum</i>“</figcaption>
             </figure>
-            <div class="subscription">
+            <div class="bottom__subscription">
                 <h3>Subscribe</h3>
                 <p>for our newsletter and promotion</p>
                 <form action="#">
-                    <input type="email" placeholder="Enter Your Email" required><input class="button main-button" type="submit" value="Subscribe">
+                    <input type="email" placeholder="Enter Your Email" required><input class="button button--main" type="submit" value="Subscribe">
                 </form>
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <p class="copyright">&copy; 2021 Brand All Rights Reserved.</p>
-            <ul class="social">
+            <p class="footer__copyright">&copy; 2021 Brand All Rights Reserved.</p>
+            <ul class="footer__social">
                 <li><a class="icon fa-light fa-facebook" href="#"></a></li>
                 <li><a class="icon fa-light fa-instagram" href="#"></a></li>
                 <li><a class="icon fa-light fa-pinterest" href="#"></a></li>

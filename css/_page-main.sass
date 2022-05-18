@@ -1,0 +1,70 @@
+.page-main
+  &__banners
+    font-family: $font-family
+    margin-top: 65px
+    @media (max-width: 1024px)
+      margin-top: 20px
+    @media (max-width: 450px)
+      margin-top: 64px
+
+    .container
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      @media (max-width: 450px)
+        justify-content: center
+
+  &__featured
+    font-family: $font-family
+    margin: 95px auto
+    text-align: center
+    @media (max-width: 1024px)
+      margin-top: 155px
+      margin-bottom: 65px
+    @media (max-width: 450px)
+      margin-top: 65px
+      margin-bottom: 96px
+
+    header
+      font-size: 14px
+      font-weight: 400
+      line-height: 17px
+      color: #9F9F9F
+      margin-bottom: 48px
+      @media (max-width: 1024px)
+        margin-bottom: 73px
+
+    h2
+      font-weight: 400
+      font-size: 30px
+      line-height: 36px
+      color: $dark-grey
+      margin-bottom: 6px
+
+    button
+      margin-top: 48px
+      @media (max-width: 1024px)
+        margin-top: 16px
+      @media (max-width: 450px)
+        margin-top: 0
+
+  &__services
+    background: $dark-grey
+    color: #FBFBFB
+    text-align: center
+    padding: 103px 0
+    font-family: $font-family
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    @media (max-width: 1024px)
+      padding: 0 0 64px 0
+    @media (max-width: 450px)
+      padding: 0 0 81px 0
+
+    .container
+      display: flex
+      justify-content: space-between
+      @media (max-width: 1024px)
+        flex-direction: column
+        align-items: center
