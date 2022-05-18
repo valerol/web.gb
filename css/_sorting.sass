@@ -1,0 +1,186 @@
+.sorting
+  display: flex
+  font-family: $font-family
+  margin-top: 51px
+  flex-direction: row
+  justify-content: center
+  position: relative
+  @media (max-width: 1024px)
+    display: flex
+    justify-content: flex-end
+  @media (max-width: 450px)
+    max-width: 100%
+
+  span
+    margin: 10px
+    font-size: 14px
+    line-height: 17px
+    color: #6F6E6E
+
+  &__filter
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    position: absolute
+    left: 0
+    margin-top: 8px
+
+    &:hover, &:active
+      .label
+        color: $red
+
+      .sorting__nav
+        display: flex
+
+      .fa-filter:before
+        font-size: 20px
+
+    &>a
+      text-transform: uppercase
+      left: 20px
+      @media (max-width: 450px)
+        left: 0
+
+      &:hover
+        & > a
+          color: $red
+
+      .label
+        display: flex
+        line-height: 14px
+        overflow: hidden
+        position: absolute
+        z-index: 10
+        margin-left: 17px
+        color: $dark-grey
+        @media (max-width: 450px)
+          margin-left: 0
+          margin-top: -10px
+
+        b
+          @media (max-width: 450px)
+            display: none
+
+      .icon
+        @media (max-width: 450px)
+          margin-left: 0
+
+    .label
+      &::after
+        @include iconic('\f012')
+        transform: rotate(90deg) scale(-1, 1)
+        font-size: 20px
+        display: block
+        margin-left: 10px
+        @media (max-width: 450px)
+          font-size: 36px
+          line-height: 24px
+          margin: 0
+
+  &__nav
+    padding: 46px 15px 16px 17px
+    box-shadow: 6px 4px 35px rgb(0 0 0 / 21%)
+    font-weight: 400
+    min-width: 360px
+    position: absolute
+    top: -13px
+    background: $white
+    z-index: 1
+    display: none
+
+    &>ul
+      width: 100%
+
+      &>li
+        margin: 18px 0
+
+        &.active
+          span
+            color: red
+
+        &>ul
+          margin: 24px 0
+
+        span
+          border-left: 5px solid $red
+          border-bottom: 1px solid #EBEBEB
+          padding: 10px
+          display: block
+          margin-left: 0
+          text-transform: uppercase
+
+    li
+      list-style: none
+      font-size: 14px
+      line-height: 17px
+
+      a
+        text-decoration: none
+        color: inherit
+        width: 100%
+        height: 100%
+        padding: 5px 12px
+        display: block
+
+  &__sort-by
+    text-transform: uppercase
+    position: relative
+    margin: 15px 0
+    display: flex
+    font-size: 14px
+    line-height: 17px
+    font-weight: 400
+    color: #6F6E6E
+    @media (max-width: 450px)
+      margin: 0
+
+    details
+      position: relative
+      margin: 0 15px
+      @media (max-width: 450px)
+        font-size: 10px
+        margin: 0 10px
+
+      &:last-child
+        margin-right: 0
+
+        .sorting__options
+          right: 0
+
+      summary
+        list-style: none
+
+        &:after
+          @include iconic('\f107')
+          font-size: 14px
+          vertical-align: bottom
+          margin-left: 10px
+          list-style: none
+          @media (max-width: 450px)
+            font-size: 10px
+
+  &__options
+    position: absolute
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    padding: 10px
+    background: white
+    color: #6F6E6E
+    top: 25px
+    z-index: 1
+    text-align: left
+    min-width: 79px
+    font-weight: 400
+    font-size: 14px
+    line-height: 16px
+    &:last-child
+      @media (max-width: 450px)
+        right: 0
+
+    input
+      border: 1px solid #EBEBEB
+      margin-right: 10px
+
+    label
+      display: block
+      margin: 5px
+      white-space: nowrap

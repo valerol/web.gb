@@ -1,0 +1,31 @@
+@mixin btn($bg, $color, $border)
+  background: $bg
+  color: $color
+  border: 1px solid $border
+
+@mixin iconic($content)
+  font-family: FontAwesome
+  content: $content
+
+@mixin input($border-color)
+  background: none
+  border: 1px solid $border-color
+
+@mixin scale($num)
+  -moz-transform: scale($num)
+  -webkit-transform: scale($num)
+  -o-transform: scale($num)
+  -ms-transform: scale($num)
+  -transform: scale($num)
+
+@mixin scale_and_rotate($num, $deg)
+  -moz-transform: scale($num) rotate($deg)
+  -webkit-transform: scale($num) rotate($deg)
+  -o-transform: scale($num) rotate($deg)
+  -ms-transform: scale($num) rotate($deg)
+  -transform: scale($num) rotate($deg)
+
+@mixin transition_all($time)
+  -webkit-transition: all $time
+  -moz-transition: all $time
+  -o-transition: all $time
