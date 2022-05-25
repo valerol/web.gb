@@ -2,6 +2,10 @@
   background: $bg
   color: $color
   border: 1px solid $border
+  transition: all 0.5s
+  -webkit-transition: all 0.5s
+  -moz-transition: all 0.5s
+  -o-transition: all 0.5s
 
 @mixin iconic($content)
   font-family: FontAwesome
@@ -24,8 +28,3 @@
   -o-transform: scale($num) rotate($deg)
   -ms-transform: scale($num) rotate($deg)
   -transform: scale($num) rotate($deg)
-
-@mixin transition_all($time)
-  -webkit-transition: all $time
-  -moz-transition: all $time
-  -o-transition: all $time

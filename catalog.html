@@ -17,7 +17,10 @@
         <div class="container">
             <div class="header-bar__left">
                 <a class="header-bar__logo" href="index.html"><img src="images/logo.svg" alt="logo"></a>
-                <a class="header-bar__search icon fa-light fa-search" href="#"></a>
+                <form class="header-bar__search">
+                    <label>Search</label>
+                    <input type="text" value="" name="search" placeholder="Type something">
+                </form>
             </div>
             <ul class="header-bar__right">
                 <li class="header-bar__menu"><a href="#"><span class="icon fa-light fa-bars"></span></a>
@@ -54,49 +57,75 @@
                         </ul>
                     </nav>
                 </li>
-                <li class="header-bar__account"><a href="#"><span class="icon fa-light fa-user"></span></a></li>
-                <li class="header-bar__minicart"><a href="#"><span class="icon fa-light fa-shopping-cart"></span><span class="counter">5</span></a></li>
+                <li class="header-bar__account"><a href="registration.html"><span class="icon fa-light fa-user"></span></a></li>
+                <li class="header-bar__minicart"><a href="cart.html"><span class="icon fa-light fa-shopping-cart"></span><span class="counter">5</span></a></li>
             </ul>
         </div>
     </header>
     <section class="page-header">
-        <div class="container">
+        <div class="container content">
             <h1>New Arrivals</h1>
-            <ul class="page-header__breadcrumbs">
+            <nav class="page-header__breadcrumbs">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Man</a></li>
                 <li class="current">New Arrivals</li>
-            </ul>
+            </nav>
         </div>
     </section>
-    <section class="page-catalog__catalog">
+    <section class="page-catalog__catalog content">
         <div class="container">
             <section class="sorting">
                 <div class="sorting__filter">
                     <a><span class="label"><b>Filter</b></span></a>
                     <nav class="sorting__nav">
-                        <ul>
-                            <li class="active"><span>Category</span>
-                                <ul>
-                                    <li><a href="#">Accessories</a></li>
-                                    <li><a href="#">Bags</a></li>
-                                    <li><a href="#">Denim</a></li>
-                                    <li><a href="#">Hoodies & Sweatshirts</a></li>
-                                    <li><a href="#">Jackets & Coats</a></li>
-                                    <li><a href="#">Polos</a></li>
-                                    <li><a href="#">Shirts</a></li>
-                                    <li><a href="#">Shoes</a></li>
-                                    <li><a href="#">Sweaters & Knits</a></li>
-                                    <li><a href="#">T-Shirts</a></li>
-                                    <li><a href="#">Tanks</a></li>
-                                </ul>
-                            </li>
-                            <li><span>Brand</span></li>
-                            <li><span>Designer</span></li>
-                        </ul>
+                        <details><summary>Category</summary>
+                            <ul>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Bags</a></li>
+                                <li><a href="#">Denim</a></li>
+                                <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                <li><a href="#">Jackets & Coats</a></li>
+                                <li><a href="#">Polos</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shoes</a></li>
+                                <li><a href="#">Sweaters & Knits</a></li>
+                                <li><a href="#">T-Shirts</a></li>
+                                <li><a href="#">Tanks</a></li>
+                            </ul>
+                        </details>
+                        <details><summary>Brand</summary>
+                            <ul>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Bags</a></li>
+                                <li><a href="#">Denim</a></li>
+                                <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                <li><a href="#">Jackets & Coats</a></li>
+                                <li><a href="#">Polos</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shoes</a></li>
+                                <li><a href="#">Sweaters & Knits</a></li>
+                                <li><a href="#">T-Shirts</a></li>
+                                <li><a href="#">Tanks</a></li>
+                            </ul>
+                        </details>
+                        <details><summary>Designer</summary>
+                            <ul>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Bags</a></li>
+                                <li><a href="#">Denim</a></li>
+                                <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                <li><a href="#">Jackets & Coats</a></li>
+                                <li><a href="#">Polos</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shoes</a></li>
+                                <li><a href="#">Sweaters & Knits</a></li>
+                                <li><a href="#">T-Shirts</a></li>
+                                <li><a href="#">Tanks</a></li>
+                            </ul>
+                        </details>
                     </nav>
                 </div>
-                <div class="sorting__sort-by">
+                <form class="sorting__sort-by">
                     <details>
                         <summary>Trending Now</summary>
                         <div class="sorting__options">
@@ -124,11 +153,11 @@
                             <label><input type="checkbox">5000-10000</label>
                         </div>
                     </details>
-                </div>
+                </form>
             </section>
             <section class="products">
                 <article class="product">
-                    <a href="#">
+                    <a href="product.html">
                         <div class="product__image">
                             <img src="images/card-1.png" alt="Ellery X X M'O Capsule">
                             <div class="button button--regular add-to-cart-button">Add to Cart</div>
@@ -141,7 +170,7 @@
                     </a>
                 </article>
                 <article class="product">
-                    <a href="#">
+                    <a href="product.html">
                         <div class="product__image">
                             <img src="images/card-2.png" alt="Ellery X X M'O Capsule">
                             <div class="button button--regular add-to-cart-button">Add to Cart</div>
@@ -154,7 +183,7 @@
                     </a>
                 </article>
                 <article class="product">
-                    <a href="#">
+                    <a href="product.html">
                         <div class="product__image">
                             <img src="images/card-3.png" alt="Ellery X X M'O Capsule">
                             <div class="button button--regular add-to-cart-button">Add to Cart</div>
@@ -167,7 +196,7 @@
                     </a>
                 </article>
                 <article class="product">
-                    <a href="#">
+                    <a href="product.html">
                         <div class="product__image">
                             <img src="images/card-4.png" alt="Ellery X X M'O Capsule">
                             <div class="button button--regular add-to-cart-button">Add to Cart</div>
@@ -180,7 +209,7 @@
                     </a>
                 </article>
                 <article class="product">
-                    <a href="#">
+                    <a href="product.html">
                         <div class="product__image">
                             <img src="images/card-5.png" alt="Ellery X X M'O Capsule">
                             <div class="button button--regular add-to-cart-button">Add to Cart</div>
@@ -193,7 +222,7 @@
                     </a>
                 </article>
                 <article class="product">
-                    <a href="#">
+                    <a href="product.html">
                         <div class="product__image">
                             <img src="images/card-6.png" alt="Ellery X X M'O Capsule">
                             <div class="button button--regular add-to-cart-button">Add to Cart</div>
@@ -206,8 +235,7 @@
                     </a>
                 </article>
             </section>
-            <div class="pagination">
-                <ul>
+                <nav class="pagination">
                     <li class="pagination-nav prev"><a href="#"></a></li>
                     <li class="current">1</li>
                     <li><a href="#">2</a></li>
@@ -218,37 +246,36 @@
                     <li class="more"><a href="#">...</a></li>
                     <li><a href="#">20</a></li>
                     <li class="pagination-nav next"><a href="#"></a></li>
-                </ul>
-            </div>
+                </nav>
         </div>
     </section>
     <section class="page-catalog__services">
         <div class="container">
-            <div class="service">
+            <article class="service">
                 <div class="service__icon">
                     <img src="images/services-1.png" alt="Free Delivery">
                 </div>
                 <p class="service__title">Free Delivery</p>
                 <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-            </div>
-            <div class="service">
+            </article>
+            <article class="service">
                 <div class="service__icon">
                     <img src="images/services-2.png" alt="Sales and discounts">
                 </div>
                 <p class="service__title">Sales & discounts</p>
                 <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-            </div>
-            <div class="service">
+            </article>
+            <article class="service">
                 <div class="service__icon">
                     <img src="images/services-3.png" alt="Quality assurance">
                 </div>
                 <p class="service__title">Quality assurance</p>
                 <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-            </div>
+            </article>
         </div>
     </section>
     <section class="bottom">
-        <div class="container">
+        <div class="container content">
             <figure class="bottom__review">
                 <img src="images/review-photo.png" alt="Review author">
                 <figcaption>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar purus condimentum</i>“</figcaption>
@@ -263,14 +290,14 @@
         </div>
     </section>
     <footer class="footer">
-        <div class="container">
+        <div class="container content">
             <p class="footer__copyright">&copy; 2021 Brand All Rights Reserved.</p>
-            <ul class="footer__social">
+            <nav class="footer__social">
                 <li><a class="icon fa-light fa-facebook" href="#"></a></li>
                 <li><a class="icon fa-light fa-instagram" href="#"></a></li>
                 <li><a class="icon fa-light fa-pinterest" href="#"></a></li>
                 <li><a class="icon fa-light fa-twitter" href="#"></a></li>
-            </ul>
+            </nav>
         </div>
     </footer>
 </body>

@@ -22,7 +22,12 @@ input
   margin: auto
   @media (max-width: 1024px)
     max-width: 1000px
-    padding: 0 16px
+  @media (max-width: 450px)
+    max-width: 420px
+
+.content
+  @media (max-width: 1024px)
+    padding: 0 1rem
 
 .button
   font-family: $font-family
@@ -31,7 +36,6 @@ input
   line-height: 19px
   padding: 15px 38px
   cursor: pointer
-  @include transition_all(0.5s)
   @media (max-width: 450px)
     padding: 10px 20px
 

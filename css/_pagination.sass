@@ -8,35 +8,38 @@
     margin-top: 20px
   @media (max-width: 450px)
     margin-top: 0
-  ul
-    border: 1px solid #EBEBEB
+  li
+    list-style: none
     display: flex
-    li
-      list-style: none
-      display: flex
-      align-items: center
-      &>a
-        text-decoration: none
-        color: inherit
-        display: block
-        width: 100%
-        padding: 15px
-      &.current,
-      &.icon-left,
-      &.icon-right
-        color: #F15E5A
-        padding: 10px
-      &.icon-left,
-      &.icon-right
+    align-items: center
+    border-top: 1px solid #EBEBEB
+    border-bottom: 1px solid #EBEBEB
+    &>a
+      text-decoration: none
+      color: inherit
+      display: block
+      width: 100%
+      padding: 15px
+    &.current,
+    &.icon-left,
+    &.icon-right
+      color: #F15E5A
+      padding: 10px
+    &.icon-left,
+    &.icon-right
+      color: $dark-grey
+      font-size: 20px
+    &.pagination-nav
+      a
         color: $dark-grey
-        font-size: 20px
-      &.pagination-nav
-        a
-          color: $dark-grey
-        &.prev a::before
+      &.prev
+        border-left: 1px solid #EBEBEB
+        a::before
           @include iconic('\f104')
-        &.next a::before
+      &.next
+        border-right: 1px solid #EBEBEB
+        a::before
           @include iconic('\f105')
-      &.more
-        a
-          padding: 0
+    &.more
+      a
+        padding: 0

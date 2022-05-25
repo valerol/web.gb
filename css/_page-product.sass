@@ -14,8 +14,7 @@
     align-items: center
     background: white
     position: relative
-    margin-top: -65px
-    z-index: 10
+    transform: translateY(-56px)
     @media (max-width: 450px)
       padding: 0 24px
 
@@ -40,7 +39,7 @@
 
   &__title
     text-transform: uppercase
-    font-family: 'Lato'
+    font-family: $font-family
     font-weight: 300
     font-size: 18px
     line-height: 22px
@@ -77,7 +76,6 @@
     align-items: center
     @media (max-width: 450px)
       padding: 65px 0
-      margin-top: 50px
 
     &.sorting
       flex-direction: column

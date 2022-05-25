@@ -17,7 +17,10 @@
     <div class="container">
         <div class="header-bar__left">
             <a class="logo" href="index.html"><img src="images/logo.svg" alt="logo"></a>
-            <a class="icon search fa-light fa-search" href="#"></a>
+            <form class="header-bar__search">
+                <label>Search</label>
+                <input type="text" value="" name="search" placeholder="Type something">
+            </form>
         </div>
         <ul class="header-bar__right">
             <li class="header-bar__menu"><a href="#"><span class="icon fa-light fa-bars"></span></a>
@@ -54,18 +57,18 @@
                     </ul>
                 </nav>
             </li>
-            <li class="header-bar__account"><a href="#"><span class="icon fa-light fa-user"></span></a></li>
+            <li class="header-bar__account"><a href="registration.html"><span class="icon fa-light fa-user"></span></a></li>
             <li class="header-bar__minicart"><a href="#"><span class="icon fa-light fa-shopping-cart"></span><span class="counter">5</span></a></li>
         </ul>
     </div>
 </header>
 <section class="page-header">
-    <div class="container">
+    <div class="container content">
         <h1>Shopping cart</h1>
     </div>
 </section>
 
-<section class="page-cart__cart">
+<section class="page-cart__cart content">
     <div class="container">
         <div class="page-cart__column">
             <article class="cart-item">
@@ -76,7 +79,7 @@
                         <li>Price: <span class="red">$300</span></li>
                         <li>Color: Red</li>
                         <li>Size: Xl</li>
-                        <li>Quantity: <input type="number" value="1" name="quantity"></li>
+                        <li>Quantity: <input type="number" value="1" min="1" name="quantity"></li>
                     </ul>
                 </div>
                 <button class="close"></button>
@@ -89,7 +92,7 @@
                         <li>Price: <span class="red">$300</span></li>
                         <li>Color: Red</li>
                         <li>Size: Xl</li>
-                        <li>Quantity: <input type="number" value="1" name="quantity"></li>
+                        <li>Quantity: <input type="number" value="1" min="1" name="quantity"></li>
                     </ul>
                 </div>
                 <button class="close"></button>
@@ -125,7 +128,7 @@
 </section>
 
 <section class="bottom">
-    <div class="container">
+    <div class="container content">
         <figure class="bottom__review">
             <img src="images/review-photo.png" alt="Review author">
             <figcaption>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar purus condimentum</i>“</figcaption>
@@ -140,14 +143,14 @@
     </div>
 </section>
 <footer class="footer">
-    <div class="container">
+    <div class="container content">
         <p class="footer__copyright">&copy; 2021 Brand All Rights Reserved.</p>
-        <ul class="footer__social">
+        <nav class="footer__social">
             <li><a class="icon fa-light fa-facebook" href="#"></a></li>
             <li><a class="icon fa-light fa-instagram" href="#"></a></li>
             <li><a class="icon fa-light fa-pinterest" href="#"></a></li>
             <li><a class="icon fa-light fa-twitter" href="#"></a></li>
-        </ul>
+        </nav>
     </div>
 </footer>
 </body>

@@ -33,7 +33,7 @@
       right: 0
 
     h2
-      margin-bottom: 14px
+      font-size: 14px
       font-weight: 700
       text-transform: uppercase
 
@@ -110,3 +110,25 @@
   &__account, &__minicart
     @media (max-width: 450px)
       display: none !important
+
+  &__search
+      align-self: center
+      &::before
+        @include iconic('\f002')
+        font-size: 32px
+        vertical-align: bottom
+      &:hover
+        input
+          display: inline
+      label, input
+        display: none
+      input
+        margin-left: 10px
+        padding: 10px 20px
+        background: white
+        border: none
+        height: 30px
+        border-radius: 20px
+        width: 150px
+        ::placeholder
+          color: #9F9F9F

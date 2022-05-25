@@ -23,28 +23,15 @@
       text-transform: uppercase
       font-weight: 300
 
-  .bottom
-    &::before
-      animation: opacity 3s
-      -webkit-animation: opacity 3s
-    figure, .bottom__subscription
-      animation: slidedown 3s
-      -webkit-animation: slidedown 3s
-
   &__column
     display: flex
     flex-direction: column
-    min-width: 360px
     @media (max-width: 1024px)
-      margin-bottom: 48px
-    @media (max-width: 450px)
       margin-bottom: 48px
 
     &:nth-child(2)
-      @media (max-width: 1024px)
+      @media (min-width: 451px) and (max-width: 1024px)
         flex-direction: row
-      @media (max-width: 450px)
-        flex-direction: column
 
   &__buttons
     display: flex

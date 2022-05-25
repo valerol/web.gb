@@ -6,7 +6,6 @@
   justify-content: center
   position: relative
   @media (max-width: 1024px)
-    display: flex
     justify-content: flex-end
   @media (max-width: 450px)
     max-width: 100%
@@ -31,6 +30,7 @@
 
       .sorting__nav
         display: flex
+        flex-direction: column
 
       .fa-filter:before
         font-size: 20px
@@ -87,27 +87,25 @@
     background: $white
     z-index: 1
     display: none
+    width: 100%
 
-    &>ul
-      width: 100%
+    details
+      margin: 9px 0
 
-      &>li
-        margin: 18px 0
+      &:active
+        summary
+          color: red
 
-        &.active
-          span
-            color: red
+      &>ul
+        margin: 24px 0
 
-        &>ul
-          margin: 24px 0
-
-        span
-          border-left: 5px solid $red
-          border-bottom: 1px solid #EBEBEB
-          padding: 10px
-          display: block
-          margin-left: 0
-          text-transform: uppercase
+      summary
+        border-left: 5px solid $red
+        border-bottom: 1px solid #EBEBEB
+        padding: 10px
+        display: block
+        margin-left: 0
+        text-transform: uppercase
 
     li
       list-style: none
