@@ -1,0 +1,82 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+ul
+  padding-left: 0
+
+input
+  background: #EDEDED
+  &::placeholder
+    font-family: $font-family
+    font-weight: 400
+    font-size: 14px
+    line-height: 17px
+    color: $dark-grey
+    opacity: 0.67
+
+.container
+  width: 100%
+  max-width: 1140px
+  margin: auto
+  @media (max-width: 1024px)
+    max-width: 1000px
+  @media (max-width: 450px)
+    max-width: 420px
+
+.content
+  @media (max-width: 1024px)
+    padding: 0 1rem
+
+.button
+  font-family: $font-family
+  font-weight: 400
+  font-size: 16px
+  line-height: 19px
+  padding: 15px 38px
+  cursor: pointer
+  @media (max-width: 450px)
+    padding: 10px 20px
+
+  &--regular, &--main:hover
+    @include btn($white, $red, $red)
+
+    &.button--grey
+      @include btn($white, #A4A4A4, #A4A4A4)
+
+  &--main, &--regular:hover
+    @include btn($red, $white, transparent)
+
+    &.button--grey
+      @include btn(#A4A4A4, $white, transparent)
+
+a.button
+  text-decoration: none
+
+.fa-light
+  font-family: FontAwesome
+
+.red
+  color: $red
+
+.close
+  border: none
+  background: none
+  height: 70px
+  width: 70px
+  cursor: pointer
+  &::before
+    @include iconic('\f00d')
+    font-size: 24px
+
+.products
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  @media (max-width: 1024px)
+    margin-top: 40px
+    margin-bottom: 20px
+    justify-content: space-around
+  @media (max-width: 450px)
+    margin-bottom: 40px

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body class="page-main">
+<body class="page-catalog">
     <header class="header-bar">
         <div class="container">
             <div class="header-bar__left">
-                <a class="header-bar__logo" href="#"><img src="images/logo.svg" alt="logo"></a>
+                <a class="header-bar__logo" href="index.html"><img src="images/logo.svg" alt="logo"></a>
                 <form class="header-bar__search">
                     <label>Search</label>
                     <input type="text" value="" name="search" placeholder="Type something">
@@ -62,58 +62,100 @@
             </ul>
         </div>
     </header>
-    <section class="banner-top">
-        <a href="#">
-            <div class="container">
-                <div class="banner-top__image">
-                    <img src="images/banner-top-image.png" alt="Banner Top Image">
-                </div>
-                <div class="banner-top__text">
-                    <p class="banner-top__title">The brand</p>
-                    <p>of luxerious <span class="red">fashion</span></p>
-                </div>
-            </div>
-        </a>
-    </section>
-    <section class="page-main__banners content">
-        <div class="container">
-            <div class="banner">
-                <a href="#"><img src="images/banner-1.png" alt="30% off for women"></a>
-                <div class="banner__text">
-                    <p>30% off</p>
-                    <p class="banner__title">for women</p>
-                </div>
-            </div>
-            <div class="banner">
-                <a href="#"><img src="images/banner-2.png" alt="Hot deal for men"></a>
-                <div class="banner__text">
-                    <p>Hot deal</p>
-                    <p class="banner__title">for men</p>
-                </div>
-            </div>
-            <div class="banner">
-                <a href="#"><img src="images/banner-3.png" alt="New arivals for kind"></a>
-                <div class="banner__text">
-                    <p>New arivals</p>
-                    <p class="banner__title">for kind</p>
-                </div>
-            </div>
-            <div class="banner banner-wide">
-                <a href="#"><img src="images/banner-4.png" alt="Accesories"></a>
-                <div class="banner__text">
-                    <p>Luxirious & trends</p>
-                    <p class="banner__title">accesories</p>
-                </div>
-            </div>
+    <section class="page-header">
+        <div class="container content">
+            <h1>New Arrivals</h1>
+            <nav class="page-header__breadcrumbs">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Man</a></li>
+                <li class="current">New Arrivals</li>
+            </nav>
         </div>
     </section>
-    <section class="page-main__featured">
+    <section class="page-catalog__catalog content">
         <div class="container">
-            <header>
-                <h2>Featured Items</h2>
-                <p>Shop for items based on what we featured in this week</p>
-            </header>
-            <div class="products">
+            <section class="sorting">
+                <div class="sorting__filter">
+                    <a><span class="label"><b>Filter</b></span></a>
+                    <nav class="sorting__nav">
+                        <details><summary>Category</summary>
+                            <ul>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Bags</a></li>
+                                <li><a href="#">Denim</a></li>
+                                <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                <li><a href="#">Jackets & Coats</a></li>
+                                <li><a href="#">Polos</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shoes</a></li>
+                                <li><a href="#">Sweaters & Knits</a></li>
+                                <li><a href="#">T-Shirts</a></li>
+                                <li><a href="#">Tanks</a></li>
+                            </ul>
+                        </details>
+                        <details><summary>Brand</summary>
+                            <ul>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Bags</a></li>
+                                <li><a href="#">Denim</a></li>
+                                <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                <li><a href="#">Jackets & Coats</a></li>
+                                <li><a href="#">Polos</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shoes</a></li>
+                                <li><a href="#">Sweaters & Knits</a></li>
+                                <li><a href="#">T-Shirts</a></li>
+                                <li><a href="#">Tanks</a></li>
+                            </ul>
+                        </details>
+                        <details><summary>Designer</summary>
+                            <ul>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Bags</a></li>
+                                <li><a href="#">Denim</a></li>
+                                <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                <li><a href="#">Jackets & Coats</a></li>
+                                <li><a href="#">Polos</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shoes</a></li>
+                                <li><a href="#">Sweaters & Knits</a></li>
+                                <li><a href="#">T-Shirts</a></li>
+                                <li><a href="#">Tanks</a></li>
+                            </ul>
+                        </details>
+                    </nav>
+                </div>
+                <form class="sorting__sort-by">
+                    <details>
+                        <summary>Trending Now</summary>
+                        <div class="sorting__options">
+                            <label><input type="checkbox">What</label>
+                            <label><input type="checkbox">Should</label>
+                            <label><input type="checkbox">Write</label>
+                            <label><input type="checkbox">Here?</label>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Size</summary>
+                        <div class="sorting__options">
+                            <label><input type="checkbox">XS</label>
+                            <label><input type="checkbox">S</label>
+                            <label><input type="checkbox">M</label>
+                            <label><input type="checkbox">L</label>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Price</summary>
+                        <div class="sorting__options">
+                            <label><input type="checkbox">100-500</label>
+                            <label><input type="checkbox">500-2000</label>
+                            <label><input type="checkbox">2000-5000</label>
+                            <label><input type="checkbox">5000-10000</label>
+                        </div>
+                    </details>
+                </form>
+            </section>
+            <section class="products">
                 <article class="product">
                     <a href="product.html">
                         <div class="product__image">
@@ -192,11 +234,22 @@
                         </div>
                     </a>
                 </article>
-            </div>
-            <button class="button button--regular">Browse All Products</button>
+            </section>
+                <nav class="pagination">
+                    <li class="pagination-nav prev"><a href="#"></a></li>
+                    <li class="current">1</li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li class="more"><a href="#">...</a></li>
+                    <li><a href="#">20</a></li>
+                    <li class="pagination-nav next"><a href="#"></a></li>
+                </nav>
         </div>
     </section>
-    <section class="page-main__services">
+    <section class="page-catalog__services">
         <div class="container">
             <article class="service">
                 <div class="service__icon">

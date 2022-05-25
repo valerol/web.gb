@@ -1,0 +1,46 @@
+.carousel
+  background: #F7F7F7
+
+  .carousel-item
+    display: flex
+    justify-content: center
+    height: 776px
+    margin-bottom: 65px
+    @media (max-width: 1024px)
+      height: 624px
+    @media (max-width: 450px)
+      padding: 85px 0
+
+    img
+      max-height: 100%
+      width: auto !important
+
+  .carousel-control
+    color: black
+    @media (max-width: 1024px)
+      display: flex
+    &::before
+      width: 47px
+      height: 47px
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-top: -65px
+    &:hover
+      color: $red
+    &.carousel-control-prev
+      @media (max-width: 1024px)
+        justify-content: flex-start
+      &::before
+        content: "\f104"
+        font-family: 'FontAwesome'
+        background: rgba(42, 42, 42, 0.15)
+        padding: 7px 15px
+    &.carousel-control-next
+      @media (max-width: 1024px)
+        justify-content: flex-end
+      &::before
+        content: "\f105"
+        font-family: 'FontAwesome'
+        background: rgba(42, 42, 42, 0.15)
+        padding: 7px 15px

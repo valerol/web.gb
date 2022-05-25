@@ -1,0 +1,134 @@
+.header-bar
+  background: $dark-grey
+  .container
+    display: flex
+    justify-content: space-between
+    color: white
+    height: 75px
+
+  .footer__copyright
+    display: flex
+    justify-content: space-between
+    color: $white
+    height: 75px
+
+  .top-nav
+    font-family: $font-family
+    font-size: 14px
+    line-height: 17px
+    background: white
+    color: $dark-grey
+    flex-direction: column
+    z-index: 10
+    position: absolute
+    top: 75px
+    right: -154px
+    padding: 37px 34px
+    width: 232px
+    display: none
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    @media (max-width: 1024px)
+      margin-right: -16px
+    @media (max-width: 450px)
+      right: 0
+
+    h2
+      font-size: 14px
+      font-weight: 700
+      text-transform: uppercase
+
+    &>ul
+      display: flex
+      flex-direction: column
+
+      &>li
+        display: flex
+        flex-direction: column
+        color: #F16D7F
+        text-transform: uppercase
+        margin-top: 20px
+        font-weight: 400
+
+        ul
+          text-transform: none
+          margin-top: 10px
+
+    a
+      color: #6F6E6E
+      display: block
+      font-size: 14px
+      line-height: 17px
+      padding: 9px 0px 9px 20px
+      width: 100%
+
+  .icon
+    font-family: FontAwesome
+    font-size: 32px
+
+  &__right,
+  &__left
+    display: flex
+    height: 100%
+
+    a
+      text-decoration: none
+      color: $white
+      display: flex
+      width: 77px
+      height: 100%
+      justify-content: center
+      align-items: center
+
+  &__right
+    li
+      display: flex
+
+  &__menu
+    position: relative
+    &:hover
+      .top-nav
+        display: flex
+
+  &__minicart
+    position: relative
+
+    .counter
+      position: absolute
+      background: #F16D7F
+      width: 19px
+      height: 19px
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 12px
+      line-height: 14px
+      font-weight: 400
+      border-radius: 10px
+      top: 15px
+      left: 45px
+
+  &__account, &__minicart
+    @media (max-width: 450px)
+      display: none !important
+
+  &__search
+      align-self: center
+      &::before
+        @include iconic('\f002')
+        font-size: 32px
+        vertical-align: bottom
+      &:hover
+        input
+          display: inline
+      label, input
+        display: none
+      input
+        margin-left: 10px
+        padding: 10px 20px
+        background: white
+        border: none
+        height: 30px
+        border-radius: 20px
+        width: 150px
+        ::placeholder
+          color: #9F9F9F
