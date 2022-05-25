@@ -1,7 +1,12 @@
 .page-registration
+  position: relative
   .page-header h1
     @media (max-width: 450px)
       margin-top: 30px
+
+  .header-bar__minicart
+    -webkit-animation: jump 1s ease-in-out
+    animation: jump 1s ease-in-out
 
   &__registration
     font-family: $font-family
@@ -93,8 +98,6 @@
 
   &__column
     width: 50%
-    @media (max-width: 1024px)
-      width: 50%
     @media (max-width: 450px)
       width: unset
 
