@@ -13,8 +13,11 @@
     display: block
     max-width: 100%
     filter: brightness(40%)
+    transition: transform 0.3s
     @media (max-width: 450px)
       min-height: 111px
+    &:hover
+      transform: scale(1.03)
 
   &.banner-wide
     width: 100%
@@ -30,6 +33,7 @@
     font-size: 16px
     line-height: 19px
     font-weight: 400
+    pointer-events: none
 
   &__title
     color: #F15E5A
