@@ -3,6 +3,11 @@
   padding: 0
   box-sizing: border-box
 
+body
+  height: 100vh
+  display: flex
+  flex-direction: column
+
 ul
   padding-left: 0
 
@@ -26,8 +31,7 @@ input
     max-width: 420px
 
 .content
-  @media (max-width: 1024px)
-    padding: 0 1rem
+  padding: 0 1rem
 
 .button
   font-family: $font-family
@@ -71,12 +75,17 @@ a.button
     font-size: 24px
 
 .products
-  display: flex
-  flex-wrap: wrap
-  justify-content: space-between
+  display: grid
+  grid-template-columns: repeat(3, 31.6%)
+  grid-template-auto: auto
+  column-gap: 2.6%
+  row-gap: 30px
+  justify-items: center
   @media (max-width: 1024px)
+    grid-template-columns: repeat(2, 49%)
+    column-gap: 2%
     margin-top: 40px
     margin-bottom: 20px
-    justify-content: space-around
   @media (max-width: 450px)
+    grid-template-columns: repeat(1, 100%)
     margin-bottom: 40px
