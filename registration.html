@@ -75,7 +75,7 @@
                 <fieldset>
                     <legend>Your Name</legend>
                     <input type="text" name="firstname" placeholder="First name" autofocus required>
-                    <input type="text" name="lastname" placeholder="Last name" autofocus required>
+                    <input type="text" name="lastname" placeholder="Last name" required>
                 </fieldset>
                 <fieldset class="gender">
                     <div>
@@ -89,8 +89,8 @@
                 </fieldset>
                 <fieldset>
                     <legend>Login details</legend>
-                    <input type="email" name="email" placeholder="Email" autofocus required>
-                    <input type="password" name="password" id="password" placeholder="Password" autofocus required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
                     <label for="password">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</label>
                 </fieldset>
                 <button class="button button--main" type="submit">Join now
@@ -100,15 +100,14 @@
         </div>
         <div class="page-registration__column">
             <h2>Loyalty has its perks</h2>
-            <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:
-                <ul>
-                    <li>15% off welcome offer</li>
-                    <li>Free shipping, returns and exchanges on all orders</li>
-                    <li>$10 off a purchase on your birthday</li>
-                    <li>Early access to products</li>
-                    <li>Exclusive offers & rewards</li>
-                </ul>
-            </p>
+            <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+            <ul>
+                <li>15% off welcome offer</li>
+                <li>Free shipping, returns and exchanges on all orders</li>
+                <li>$10 off a purchase on your birthday</li>
+                <li>Early access to products</li>
+                <li>Exclusive offers & rewards</li>
+            </ul>
         </div>
     </div>
 </section>
@@ -131,12 +130,12 @@
 <footer class="footer">
     <div class="container content">
         <p class="footer__copyright">&copy; 2021 Brand All Rights Reserved.</p>
-        <nav class="footer__social">
+        <ul class="footer__social">
             <li><a class="icon fa-light fa-facebook" href="#"></a></li>
             <li><a class="icon fa-light fa-instagram" href="#"></a></li>
             <li><a class="icon fa-light fa-pinterest" href="#"></a></li>
             <li><a class="icon fa-light fa-twitter" href="#"></a></li>
-        </nav>
+        </ul>
     </div>
 </footer>
 </body>
